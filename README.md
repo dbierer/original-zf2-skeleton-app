@@ -3,7 +3,7 @@ ZendSkeletonApplication
 
 Important Note
 --------------
-This is the "original" ZF2 Zend Skeleton dated 20 February 2016.  It *does not* try to install ZF3.
+This is the "original" ZF2 Zend Skeleton dated 20 February 2016.  It *does not* try to install ZF3.  It is *not changed*: no additional modules, no changes from the original version of 20 February.
 
 Introduction
 ------------
