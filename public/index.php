@@ -15,7 +15,14 @@ if (php_sapi_name() === 'cli-server') {
 }
 
 // Setup autoloading
-require 'init_autoloader.php';
+// substitute the correct location of the ZF library in place of ZF_PATH
+include ZF_PATH . '/Zend/Loader/AutoloaderFactory.php';
+    Zend\Loader\AutoloaderFactory::factory(array(
+        'Zend\Loader\StandardAutoloader' => array(
+            'autoregister_zf' => true
+        )
+    )
+);
 
 // Run the application!
 Zend\Mvc\Application::init(require 'config/application.config.php')->run();
